@@ -1,57 +1,61 @@
 <!DOCTYPE html>
-<html>
+<Html>
   <head>
-    <title>My First Website!!</title>
-    <style>
+    <title>My First Website</title>
+    <style> 
       #headingID {
-        font-family: "Trattatello";
-        font-size: 50px;
-        border: solid 3px green;
+      font-family:"Impact";
+        font-size:"50px";
+        border: solid 5px green;
       }
-      
       ul {
         border-width: 5px;
         border-style: dashed;
-        border-color: #A30892;
-        padding: 20px;
+        border-color:#1BF8FF;
       }
-      
-      p {
-        font-family: "Bradley Hand";
-        font-size: 3em;
-      }
-      
+    p {
+      font-family:"Bradley Hand";
+       font-size: 3ems;
+      } #uniqueParagraph {
+     font-family:"Courier New";
+   }
       div {
-        border: dotted 10px blue;
-        margin: 30px;
+        border:dotted 10px blue;
+        margin:30px;
         padding: 30px;
       }
-    </style>
-    
-    <script>
-      function myFunction() {
-        document.getElementById("jsDemo").innerHTML = "Hello, " + document.getElementById("userTextInput").value;
-      }
+        </style>
+   <script>
+     function myFunction() {
+       document.getElementByID("jsDemo").innerhtml = "Hello, " + document.getElementByID("userTextInput").value;
+     }
     </script>
-  </head>
+     </head>
   <body>
-    <h1 id="headingID">BIG heading!!!!!!!</h1>
-       
-    <img src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png" alt="image not loading" id="someid">
+  <h1 id="headingID">  Hi!<h1>
+  <image src="https://miro.medium.com/max/3200/0*PfM60PImiDuub_CN.png" alt=photo>
     <ul>
-      <li>mashed potatos</li>
-      <li> steak</li>
-      <li>cereal</li>
-      <li>ribs</li>
-    </ul>
-    <div>
-      <p>Hello i am COOOL</p>
-      <p>wow i am cool</p>
-      <a href="layout.html">another page </a>
-    </div>
-    <input type="text" id="userTextInput" value="">
-    
-    <p id="jsDemo">Hi! lol </p>
-    <button type="button" onclick='myFunction()'>Update name field!</button>
-  </body>
+  <li>hmm this is cool</li>
+  <li>wow this is cool</li>
+  <li>cereal</li>
+</ul>
+<div>
+   
+<p id ="uniqueParagraph">Hello my name is Henry. </p>
+  <p> Hello I am cool</p>
+  <p style"color:#FFE500">I am very cool</p>
+  <h2 class="headings">Hi again!</h2>
+  <a href="https://henrycool1.github.io/anotherFile.html"> Click this when you are done reading...</a>
+     </div>
+  
+<input type="text" id="userTextInput" value="">
+  <a href="layout.html">some link</a>
+  
+  <ol>
+   <li>Random</li> 
+   <li>lol </li>
+   <li> list</li>
+ </ol>
+  
+</body>
 </html>
