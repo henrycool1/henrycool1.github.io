@@ -14,32 +14,42 @@
         border-color:#1BF8FF;
       }
     p {
-       font-size: 30px;
-      }
-   .headings {
-     border-style:dashed;
-     border-width:5px;
-   }
-   #uniqueParagraph {
+      font-family:"Bradley Hand";
+       font-size: 3ems;
+      } #uniqueParagraph {
      font-family:"Courier New";
    }
-    </style>
-    <link rel="stylesheet" type="text/css" href="main.css">
-   </head>
+      div {
+        border:dotted 10px blue;
+        margin:30px;
+        padding: 30px;
+      }
+        </style>
+   <script>
+     function myFunction() {
+       document.getElementByID("jsDemo").innerhtml = "Hello, " + document.getElementByID("userTextInput").value;
+     }
+     </head>
   <body>
-<h1 id="headingID">  Hi!<h1>
-<p id ="uniqueParagraph">Hello my name is Henry. </p>
-  <p> Hello I am cool</p>
-  <p style"color:#FFE500">I am very cool</p>
-  <h2 class="headings">Hi again!</h2>
-
-  <a href="https://henrycool1.github.io/anotherFile.html"> Click this when you are done reading...</a>
-  
-<ul>
+  <h1 id="headingID">  Hi!<h1>
+  <image src="https://miro.medium.com/max/3200/0*PfM60PImiDuub_CN.png" alt=photo>
+    <ul>
   <li>hmm this is cool</li>
   <li>wow this is cool</li>
   <li>cereal</li>
 </ul>
+<div>
+   
+<p id ="uniqueParagraph">Hello my name is Henry. </p>
+  <p> Hello I am cool</p>
+  <p style"color:#FFE500">I am very cool</p>
+  <h2 class="headings">Hi again!</h2>
+  <a href="https://henrycool1.github.io/anotherFile.html"> Click this when you are done reading...</a>
+     </div>
+  
+<input type="text" id="userTextInput" value="">
+   <p id="jsDemo">Hello! Javascript will change this...</p>
+    <button type="button" onclick='myFunction()'>Update name field!</button>
   
   <ol>
    <li>Random</li> 
@@ -47,6 +57,6 @@
    <li> list</li>
  </ol>
 <p>Be not afraid of greatness<br>Some are born great,<br>some achieve greatness,<br>and others have it thrust apon them.</p>
-  <image src="https://miro.medium.com/max/3200/0*PfM60PImiDuub_CN.png" alt=photo>
+  
     </body>
   </html>
