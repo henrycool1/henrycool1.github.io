@@ -7,9 +7,9 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: blue;
+        background-color: black;
       }
-      li {
+      ul li {
         float: left;
       }
       a {
@@ -24,17 +24,21 @@
       .flex-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
       }
       
-      .flex-item {
-        background-color: green;
-        color: white;
-        padding: 75px;
-        font-size: 50px;
+      .left-column {
+        flex: 1;
+        border: 1px solid green;
+        padding: 20px;
+        background: #F3CCCD;
       }
-    </style>
+      
+      .right-column {
+        flex: 2;
+        border: 3px dotted red;
+        padding: 20px;
+      }
+      </style>
   </head>
   <body>
     <ul>
@@ -42,34 +46,34 @@
         <a href="index.html">Home</a>
       </li>
       <li>
-        <a href="anotherFile.html">News</a>
+        <a href="layout.html">News</a>
       </li>
       <li>
         <a href="index.html">Contact</a>
       </li>
       <li>
-        <a href="Aboutme.html">About</a>
+        <a href="index.html">About</a>
       </li>
     </ul>
-    
-    
-    
-    
-    <div class="flex-container">
-      <p class="flex-item">First Item in Flexbox</p>
-      <p class="flex-item">Second Item in Flexbox</p>
-      <p class="flex-item">Third Item in Flexbox</p>
-      
-      <p class="flex-item">First Item in Flexbox</p>
-      <p class="flex-item">Second Item in Flexbox</p>
-      <p class="flex-item">Third Item in Flexbox</p>
-      <p class="flex-item">First Item in Flexbox</p>
-      <p class="flex-item">Second Item in Flexbox</p>
-      <p class="flex-item">Third Item in Flexbox</p>
-    </div>
    
-    
-    
+    <div class="flex-container">
+      
+      <div class="left-column">
+        <h1>Hello!</h1>
+        <p>Hello. My name is Henry and I go to Newlonsburg Elementary. I hope you can learn more about me on this website!</p>
+        <p>xD!</p> 
+      </div>
+      
+      <div class="right-column">
+        <h1>Here are some things I enjoy doing:</h1>
+        <ol>
+          <li>Playing the piano</li>
+          <li>playing at the park with friends</li>
+          <li>Playing video games</li>
+        </ol>
+      </div>
+      
+    </div>
     
     
     
