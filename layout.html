@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>My First Website!!</title>
     <style>
+      #headingID {
+        font-family: "Trattatello";
+        font-size: 50px;
+        border: solid 3px green;
+      }
+      
       ul {
         list-style-type: none;
         margin: 0;
@@ -20,25 +27,27 @@
         color: white;
       }
       
-      
-      .flex-container {
-        display: flex;
-        flex-direction: row;
+      p {
+        font-family: "Bradley Hand";
+        font-size: 3em;
       }
       
-      .left-column {
-        flex: 1;
-        border: 1px solid green;
-        padding: 20px;
-        background: #F3CCCD;
+      div {
+        border: dotted 10px blue;
+        margin: 30px;
+        padding: 30px;
+      }
+    </style>
+    
+    <script>
+      function myFunction() {
+        document.getElementById("jsDemo").innerHTML = "Hello, " + document.getElementById("userTextInput").value;
       }
       
-      .right-column {
-        flex: 2;
-        border: 3px dotted red;
-        padding: 20px;
+      function changeHeadingFont() {
+        document.getElementById("headingID").style.fontFamily = "Courier New";
       }
-      </style>
+    </script>
   </head>
   <body>
     <ul>
@@ -55,29 +64,25 @@
         <a href="index.html">About</a>
       </li>
     </ul>
-   
-    <div class="flex-container">
-      
-      <div class="left-column">
-        <h1>Hello!</h1>
-        <p>Hello. My name is Henry and I go to Newlonsburg Elementary. I hope you can learn more about me on this website!</p>
-        <p>xD!</p> 
-      </div>
-      
-      <div class="right-column">
-        <h1>Here are some things I enjoy doing:</h1>
-        <ol>
-          <li>Playing the piano</li>
-          <li>playing at the park with friends</li>
-          <li>Playing video games</li>
-        </ol>
-      </div>
-      
+    
+    <h1 id="headingID">image worked, hopefully</h1>
+    <button type="button" onclick='changeHeadingFont()'>Change the font of this heading</button>
+    
+    <img src="myDownloadedImage.jpeg" alt="image not loading" id="someid">
+    <ul>
+      <li>Fruits</li>
+      <li>Veggies</li>
+      <li>Meat</li>
+      <li>Dairy</li>
+    </ul>
+    <div>
+      <p>some paragraph</p>
+      <p>another paragraph</p>
+      <a href="layout.html">some link</a>
     </div>
+    <input type="text" id="userTextInput" value="">
     
-    
-    
-
-
+    <p id="jsDemo">Hello! Javascript will change this...</p>
+    <button type="button" onclick='myFunction()'>Update name field!</button>
   </body>
 </html>
