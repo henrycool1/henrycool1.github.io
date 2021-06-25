@@ -1,61 +1,104 @@
+  
 <!DOCTYPE html>
-<Html>
+<html>
   <head>
-    <title>My First Website</title>
-    <style> 
-      #headingID {
-      font-family:"Impact";
-        font-size:"50px";
-        border: solid 5px green;
-      }
+    <style>
       ul {
-        border-width: 5px;
-        border-style: dashed;
-        border-color:#1BF8FF;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
       }
-    p {
-      font-family:"Bradley Hand";
-       font-size: 3ems;
-      } #uniqueParagraph {
-     font-family:"Courier New";
-   }
-      div {
-        border:dotted 10px blue;
-        margin:30px;
+      ul li {
+        float: left;
+      }
+      a {
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+        text-align: center;
+        color: white;
+      }
+      
+      p {
+        font-family: "Courier New";
+        font-size: 30px;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .left-column {
+        flex: 1;
+        border: 1px solid green;
+        padding: 20px;
+        background: #F3CCCD;
+      }
+      
+      .right-column {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        border: 3px dotted red;
+        padding: 20px;
+      }
+      
+      .right-row {
+        flex: 1;
+        border: 3px solid black;
         padding: 30px;
-      }
-        </style>
-   <script>
-     function myFunction() {
-       document.getElementByID("jsDemo").innerhtml = "Hello, " + document.getElementByID("userTextInput").value;
-     }
-    </script>
-     </head>
+      </style>
+  </head>
   <body>
-  <h1 id="headingID">  Hi!<h1>
-  <image src="https://miro.medium.com/max/3200/0*PfM60PImiDuub_CN.png" alt=photo>
     <ul>
-  <li>hmm this is cool</li>
-  <li>wow this is cool</li>
-  <li>cereal</li>
-</ul>
-<div>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="resources.html">Resources</a>
+      </li>
+      <li>
+        <a href="index.html">Contact</a>
+      </li>
+
+    </ul>
    
-<p id ="uniqueParagraph">Hello my name is Henry. </p>
-  <p> Hello I am cool</p>
-  <p style"color:#FFE500">I am very cool</p>
-  <h2 class="headings">Hi again!</h2>
-  <a href="https://henrycool1.github.io/anotherFile.html"> Click this when you are done reading...</a>
-     </div>
-  
-<input type="text" id="userTextInput" value="">
-  <a href="layout.html">some link</a>
-  
-  <ol>
-   <li>Random</li> 
-   <li>lol </li>
-   <li> list</li>
- </ol>
-  
-</body>
-</html>
+    
+    <div class="flex-container">
+      
+      <div class="left-column">
+        <h1>Hello today you will learn about the violin </h1>
+        <p>The violin is an instrument that was made in the 1600s. There was evidence about violins in the 1530s from Gaudenzio Ferrari but those violins had 3 strings. </p>
+      </div>
+      
+      <div class="right-column">
+        <div class="right-row">
+          <h1>Violin</h1>varying the air pressure by tiny amounts. Violins make sound by creating energy from the string to the bow. As the bow is drawn across the string, the air molecules in and around the violin move backwards and forwards, </p>
+          <p>The violin is mostly made of spruce or maple wood.</p>
+        </div>
+        <div class="right-row">
+          <h2>Random Facts</h2>
+          <p>Violins can burn approximately 170 calories per hour.</p>
+          <p>There are 150-200 strings on a violins bow.</p>
+        </div>
+      </div>
+    </div>
+     
+    <p>Picture of violin</p>
+    <div class="flex-container">
+      <div style="flex:1">
+        <img src="https://decibelaudiokenya.co.ke/wp-content/uploads/2020/03/ordinary-violin-250x250-1.jpg" style="width:100%">
+      </div>
+    </div>
+    <ul>
+      <li>
+        <a href="index.html">Button</a>
+      </li>
+    </ul>
+    
+
+
+  </body>
+</html
